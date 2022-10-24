@@ -6,11 +6,14 @@
 
 # Values in column names 
 
+
+#reads in file
 raw <- read.csv("data/pew.csv", check.names = F)
 
+#views first few lines of data
 head(raw)
 
-library(reshape2)
+library(reshape2) #reads in library
 tidy <- melt(raw, id = "religion")
 
 head(raw)
